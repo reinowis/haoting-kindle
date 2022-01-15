@@ -1,0 +1,121 @@
+{
+	"items": [
+	{
+		"name": "Sox Media Player",
+		"priority": 0,
+		"items": [
+		{
+			"name": "Play all files in Music Directory",
+			"priority": 1,
+			"action": "./playall.sh",
+                        "params": "",
+                        "exitmenu": false,
+			"status": false,
+			"internal": "status Play all files in Music Directory"
+		},
+		{
+			"name": "Stop playing media",
+			"priority": 2,
+			"action": "./killsox.sh",
+                        "params": "",
+                        "exitmenu": false,
+			"status": false,
+			"internal": "status Stop playing media"
+		},
+		{
+		        "name": "Stop playing with bookmark",
+		        "priority": 3,
+		        "action": "./bookmark.sh",
+		        "params": "",
+		        "exitmenu": false,
+		        "status": false,
+		        "internal": "status Stop playing with bookmark"
+		},
+		{
+			"name": "Internet Radio",
+			"priority": 4,
+			"items": [
+			{
+				"name": "Play WMAL-FM",
+				"priority": 1,
+				"action": "./playinternetradio.sh",
+				"params": "mp3 http://provisioning.streamtheworld.com/pls/WMALFM.pls",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Play WMAL-FM"
+			},
+			{
+				"name": "Play WWRC-AM",
+				"priority": 2,
+				"action": "./playinternetradio.sh",
+				"params": "mp3 http://provisioning.streamtheworld.com/pls/WWRCAM.pls",
+				"exitmenu":false,
+				"status": false,
+				"internal": "status Play WWRC-AM"
+			},
+			{
+				"name": "Play KSKY-AM",
+				"priority": 3,
+				"action": "./playinternetradio.sh",
+				"params": "mp3 http://provisioning.streamtheworld.com/pls/KSKYAM.pls",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Play KSKY-AM"
+			},
+			{
+				"name": "Play WTOP-FM",
+				"priority": 4,
+				"action": "./playinternetradio.sh",
+				"params": "mp3 http://provisioning.streamtheworld.com/pls/WTOPFM.pls",
+				"exitmenu": false,
+				"internal": "status Play WTOP-FM"
+			},
+			{
+				"name": "Play WAVA-FM",
+				"priority": 5,
+				"action": "./playinternetradio.sh",
+				"params": "mp3 http://provisioning.streamtheworld.com/pls/WAVAFM.pls",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Play WAVA-FM"
+			},
+			{
+				"name": "Play WAVA-AM",
+				"priority": 6,
+				"action": "./playinternetradio.sh",
+				"params": "mp3 http://provisioning.streamtheworld.com/pls/WAVAFM.pls",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Play WAVA-AM"
+			},
+			{
+				"name": "Stop playing media",
+				"priority": 7,
+				"action": "./killsox.sh",
+				"params": "",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Stop playing media"
+			}
+
+			]
+		},
+		{
+			"name": "Update media playlist",
+			"priority": 5,
+			"action": "./updateplaylist.sh",
+			"params": "",
+			"exitmenu": false,
+			"status": false,
+			"refresh": true,
+			"internal": "status Update media playlist"
+		},
+		{
+			"name": "Media playlist",
+			"priority": 6,
+			"markListItem":true
+		}
+		]
+	}
+	]
+}

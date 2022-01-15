@@ -1,0 +1,201 @@
+{
+	"items": [
+	{
+		"name": "Sox Media Player",
+		"priority": 0,
+		"items": [
+		{
+			"name": "Play all files in Music Directory",
+			"priority": 1,
+			"action": "./playall.sh",
+                        "params": "",
+                        "exitmenu": false,
+			"status": false,
+			"internal": "status Play all files in Music Directory"
+		},
+		{
+			"name": "Stop playing media",
+			"priority": 2,
+			"action": "./killsox.sh",
+                        "params": "",
+                        "exitmenu": false,
+			"status": false,
+			"internal": "status Stop playing media"
+		},
+		{
+		        "name": "Stop playing with bookmark",
+		        "priority": 3,
+		        "action": "./bookmark.sh",
+		        "params": "",
+		        "exitmenu": false,
+		        "status": false,
+		        "internal": "status Stop playing with bookmark"
+		},
+		{
+			"name": "Internet Radio",
+			"priority": 4,
+			"items": [
+			{
+				"name": "Play WMAL-FM",
+				"priority": 1,
+				"action": "./playinternetradio.sh",
+				"params": "mp3 http://provisioning.streamtheworld.com/pls/WMALFM.pls",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Play WMAL-FM"
+			},
+			{
+				"name": "Play WWRC-AM",
+				"priority": 2,
+				"action": "./playinternetradio.sh",
+				"params": "mp3 http://provisioning.streamtheworld.com/pls/WWRCAM.pls",
+				"exitmenu":false,
+				"status": false,
+				"internal": "status Play WWRC-AM"
+			},
+			{
+				"name": "Play KSKY-AM",
+				"priority": 3,
+				"action": "./playinternetradio.sh",
+				"params": "mp3 http://provisioning.streamtheworld.com/pls/KSKYAM.pls",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Play KSKY-AM"
+			},
+			{
+				"name": "Play WTOP-FM",
+				"priority": 4,
+				"action": "./playinternetradio.sh",
+				"params": "mp3 http://provisioning.streamtheworld.com/pls/WTOPFM.pls",
+				"exitmenu": false,
+				"internal": "status Play WTOP-FM"
+			},
+			{
+				"name": "Play WAVA-FM",
+				"priority": 5,
+				"action": "./playinternetradio.sh",
+				"params": "mp3 http://provisioning.streamtheworld.com/pls/WAVAFM.pls",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Play WAVA-FM"
+			},
+			{
+				"name": "Play WAVA-AM",
+				"priority": 6,
+				"action": "./playinternetradio.sh",
+				"params": "mp3 http://provisioning.streamtheworld.com/pls/WAVAFM.pls",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Play WAVA-AM"
+			},
+			{
+				"name": "Stop playing media",
+				"priority": 7,
+				"action": "./killsox.sh",
+				"params": "",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Stop playing media"
+			}
+
+			]
+		},
+		{
+			"name": "Update media playlist",
+			"priority": 5,
+			"action": "./updateplaylist.sh",
+			"params": "",
+			"exitmenu": false,
+			"status": false,
+			"refresh": true,
+			"internal": "status Update media playlist"
+		},
+		{
+			"name": "Media playlist",
+			"priority": 6,
+			"items":[
+			{
+				"name": "doiladi.mp3",
+				"priority": "0",
+				"action": "./playfile.sh '/mnt/us/music/doiladi.mp3'",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Playing media doiladi.mp3"
+			},
+			{
+				"name": "CamOnVaXinLoi-Chillies.mp3",
+				"priority": "1",
+				"action": "./playfile.sh '/mnt/us/music/CamOnVaXinLoi-Chillies.mp3'",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Playing media CamOnVaXinLoi-Chillies.mp3"
+			},
+			{
+				"name": "ChoNgayLoiHuaNoHoa-NguyenHa.mp3",
+				"priority": "2",
+				"action": "./playfile.sh '/mnt/us/music/ChoNgayLoiHuaNoHoa-NguyenHa.mp3'",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Playing media ChoNgayLoiHuaNoHoa-NguyenHa.mp3"
+			},
+			{
+				"name": "CoMotNgayBuonNhuThe-NguyenHa.mp3",
+				"priority": "3",
+				"action": "./playfile.sh '/mnt/us/music/CoMotNgayBuonNhuThe-NguyenHa.mp3'",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Playing media CoMotNgayBuonNhuThe-NguyenHa.mp3"
+			},
+			{
+				"name": "DieuValseUiAn-NguyenHa.mp3",
+				"priority": "4",
+				"action": "./playfile.sh '/mnt/us/music/DieuValseUiAn-NguyenHa.mp3'",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Playing media DieuValseUiAn-NguyenHa.mp3"
+			},
+			{
+				"name": "NhamMatThayMuaHeNhamMatThayMuaHeOST-NguyenHa.mp3",
+				"priority": "5",
+				"action": "./playfile.sh '/mnt/us/music/NhamMatThayMuaHeNhamMatThayMuaHeOST-NguyenHa.mp3'",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Playing media NhamMatThayMuaHeNhamMatThayMuaHeOST-NguyenHa.mp3"
+			},
+			{
+				"name": "SauNayHayGapLaiNhauKhiHoaNo-NguyenHa.mp3",
+				"priority": "6",
+				"action": "./playfile.sh '/mnt/us/music/SauNayHayGapLaiNhauKhiHoaNo-NguyenHa.mp3'",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Playing media SauNayHayGapLaiNhauKhiHoaNo-NguyenHa.mp3"
+			},
+			{
+				"name": "TroiSangRoiTaNguDiThoi-NguyenHa.mp3",
+				"priority": "7",
+				"action": "./playfile.sh '/mnt/us/music/TroiSangRoiTaNguDiThoi-NguyenHa.mp3'",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Playing media TroiSangRoiTaNguDiThoi-NguyenHa.mp3"
+			},
+			{
+				"name": "VuaBietDauYeu-NguyenHa.mp3",
+				"priority": "8",
+				"action": "./playfile.sh '/mnt/us/music/VuaBietDauYeu-NguyenHa.mp3'",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Playing media VuaBietDauYeu-NguyenHa.mp3"
+			},
+			{
+				"name": "chuyen_ngay_sau_ke_nguyen_ha_st_ho_tien_dat.mp3",
+				"priority": "9",
+				"action": "./playfile.sh '/mnt/us/music/chuyen_ngay_sau_ke_nguyen_ha_st_ho_tien_dat.mp3'",
+				"exitmenu": false,
+				"status": false,
+				"internal": "status Playing media chuyen_ngay_sau_ke_nguyen_ha_st_ho_tien_dat.mp3"
+			}]
+		}
+		]
+	}
+	]
+}
